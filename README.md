@@ -1,38 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# helciohumberto.dev — Blog
 
-**Live:** [https://helciohumberto.github.io/blog-minimal](https://helciohumberto.github.io/blog-minimal)
+Blog minimalista sobre tecnologia, blockchain e engenharia de software.
 
-## Getting Started
+**Live:** [helciohumberto.github.io/blog-minimal](https://helciohumberto.github.io/blog-minimal)
 
-First, run the development server:
+---
+
+## Stack
+
+- **Next.js 16** — App Router, static export (`output: "export"`)
+- **Tailwind CSS v4**
+- **TypeScript**
+- **gray-matter** — frontmatter dos posts
+- **remark + rehype** — Markdown → HTML com syntax highlighting
+- **Fuse.js** — busca client-side
+- **feed** — geração de RSS
+
+Deploy automático via GitHub Actions → GitHub Pages.
+
+## Desenvolvimento
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # gera /out para produção
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Novo post
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Crie um arquivo em `posts/` com o frontmatter:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```markdown
+---
+title: "Título do post"
+date: "2026-01-01"
+excerpt: "Descrição curta para SEO e listagem."
+category: tecnologia
+tags: [tag1, tag2]
+---
 
-## Learn More
+Conteúdo em Markdown...
+```
 
-To learn more about Next.js, take a look at the following resources:
+Categorias disponíveis: `tecnologia` · `blockchain` · `criptomoedas` · `estudos`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Imagem OG
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Adicione o post em `scripts/gen-og.mjs` e rode:
 
-## Deploy on Vercel
+```bash
+node scripts/gen-og.mjs
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O arquivo gerado vai para `public/og/<slug>.png`.
