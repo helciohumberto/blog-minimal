@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" style="background:#0f0f0f; font-family: 'JetBrains Mono', monospace;">
+
+  <!-- Divider -->
+  <line x1="400" y1="20" x2="400" y2="320" stroke="#1f1f1f" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- LEFT: Custódia centralizada -->
+  <text x="200" y="48" fill="#555" font-size="10" letter-spacing="3" text-anchor="middle">CUSTÓDIA CENTRALIZADA</text>
+
+  <!-- Exchange box -->
+  <rect x="60" y="66" width="140" height="56" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="130" y="89" fill="#888" font-size="11" text-anchor="middle">EXCHANGE</text>
+  <text x="130" y="107" fill="#555" font-size="9" text-anchor="middle">chaves deles</text>
+
+  <!-- Arrow right: exchange → keys held by them -->
+  <line x1="200" y1="94" x2="248" y2="94" stroke="#444" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="248,90 260,94 248,98" fill="#444"/>
+
+  <!-- Key icon (exchange holds) -->
+  <rect x="262" y="74" width="76" height="40" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="300" y="94" fill="#7a3030" font-size="10" text-anchor="middle">🔑 deles</text>
+  <text x="300" y="108" fill="#555" font-size="8" text-anchor="middle">chave privada</text>
+
+  <!-- User (left) -->
+  <rect x="60" y="158" width="140" height="56" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="130" y="181" fill="#888" font-size="11" text-anchor="middle">VOCÊ</text>
+  <text x="130" y="199" fill="#555" font-size="9" text-anchor="middle">saldo na tela deles</text>
+
+  <!-- Arrow down: exchange → user (dependency) -->
+  <line x1="130" y1="122" x2="130" y2="156" stroke="#7a3030" stroke-width="1.5"/>
+  <polygon points="126,156 130,168 134,156" fill="#7a3030"/>
+
+  <!-- Risk labels -->
+  <text x="200" y="248" fill="#7a3030" font-size="9" text-anchor="middle">hack · falência · bloqueio</text>
+  <text x="200" y="264" fill="#5a2222" font-size="9" text-anchor="middle">você perde acesso</text>
+
+  <!-- X mark -->
+  <text x="200" y="296" fill="#7a3030" font-size="22" text-anchor="middle" font-weight="bold">✕</text>
+
+  <!-- RIGHT: Autocustódia -->
+  <text x="600" y="48" fill="#555" font-size="10" letter-spacing="3" text-anchor="middle">AUTOCUSTÓDIA</text>
+
+  <!-- Hardware wallet box -->
+  <rect x="460" y="66" width="140" height="56" rx="4" fill="#1a1a1a" stroke="#2a3a2a" stroke-width="1"/>
+  <text x="530" y="89" fill="#888" font-size="11" text-anchor="middle">HARDWARE WALLET</text>
+  <text x="530" y="107" fill="#3d8fa3" font-size="9" text-anchor="middle">chaves suas, offline</text>
+
+  <!-- Arrow right: wallet → your key -->
+  <line x1="600" y1="94" x2="648" y2="94" stroke="#3d8fa3" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="648,90 660,94 648,98" fill="#3d8fa3"/>
+
+  <!-- Key icon (you hold) -->
+  <rect x="662" y="74" width="76" height="40" rx="4" fill="#1a1a1a" stroke="#2a3a2a" stroke-width="1"/>
+  <text x="700" y="94" fill="#3d8fa3" font-size="10" text-anchor="middle">🔑 suas</text>
+  <text x="700" y="108" fill="#555" font-size="8" text-anchor="middle">chave privada</text>
+
+  <!-- User (right) -->
+  <rect x="460" y="158" width="140" height="56" rx="4" fill="#1a1a1a" stroke="#2a3a2a" stroke-width="1"/>
+  <text x="530" y="181" fill="#888" font-size="11" text-anchor="middle">VOCÊ</text>
+  <text x="530" y="199" fill="#3d8fa3" font-size="9" text-anchor="middle">controle total</text>
+
+  <!-- Arrow down: wallet → user (direct) -->
+  <line x1="530" y1="122" x2="530" y2="156" stroke="#3d8fa3" stroke-width="1.5"/>
+  <polygon points="526,156 530,168 534,156" fill="#3d8fa3"/>
+
+  <!-- Seed phrase backup -->
+  <rect x="460" y="232" width="280" height="36" rx="4" fill="#111" stroke="#1f2e1f" stroke-width="1"/>
+  <text x="600" y="250" fill="#555" font-size="9" text-anchor="middle">seed phrase → backup físico offline</text>
+  <text x="600" y="263" fill="#3d8fa3" font-size="8" text-anchor="middle">12 ou 24 palavras · sua responsabilidade</text>
+
+  <!-- Check mark -->
+  <text x="600" y="308" fill="#3d8fa3" font-size="22" text-anchor="middle" font-weight="bold">✓</text>
+
+  <!-- Title -->
+  <text x="400" y="18" fill="#333" font-size="9" letter-spacing="2" text-anchor="middle">MODELO DE CUSTÓDIA</text>
+
+</svg>
