@@ -22,6 +22,11 @@ const posts = [
     title: ['Not your keys,', 'not your coins:', 'guia de autocustódia'],
     category: 'CRIPTOMOEDAS',
   },
+  {
+    slug: 'defi-o-que-e-como-funciona',
+    title: ['DeFi: o sistema', 'financeiro sem', 'ninguém no meio'],
+    category: 'BLOCKCHAIN',
+  },
 ];
 
 const url = 'helciohumberto.github.io/blog-minimal';
