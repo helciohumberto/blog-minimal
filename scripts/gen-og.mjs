@@ -27,6 +27,11 @@ const posts = [
     title: ['DeFi: o sistema', 'financeiro sem', 'ninguém no meio'],
     category: 'BLOCKCHAIN',
   },
+  {
+    slug: 'trade-perfeito-analise-tecnica-ia',
+    title: ['O trade perfeito:', 'análise técnica', '+ IA'],
+    category: 'CRIPTOMOEDAS',
+  },
 ];
 
 const url = 'helciohumberto.github.io/blog-minimal';
