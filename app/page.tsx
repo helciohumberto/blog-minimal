@@ -20,7 +20,7 @@ export default function HomePage() {
       </div>
 
       <Suspense>
-        <SearchBar posts={posts} />
+        <SearchBar posts={posts} hideInput />
       </Suspense>
     </>
   );
