@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import HeaderSearch from "./HeaderSearch";
+import type { PostMeta } from "@/types/post";
 
 const NAV = [
   { href: "/", label: "~/home" },
@@ -9,7 +10,7 @@ const NAV = [
   { href: "/contato", label: "~/contato" },
 ];
 
-export default function Header() {
+export default function Header({ posts }: { posts: PostMeta[] }) {
   return (
     <header
       style={{
@@ -25,7 +26,7 @@ export default function Header() {
     >
       <div
         style={{
-          maxWidth: "720px",
+          maxWidth: "960px",
           margin: "0 auto",
           padding: "0 1.5rem",
           display: "flex",
@@ -61,7 +62,7 @@ export default function Header() {
               {n.label}
             </Link>
           ))}
-          <HeaderSearch />
+          <HeaderSearch posts={posts} />
           <ThemeToggle />
         </nav>
       </div>

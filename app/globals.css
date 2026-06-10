@@ -169,6 +169,46 @@ a {
   margin: 2rem 0;
 }
 
+/* Page layout with sidebar */
+.page-layout {
+  flex: 1;
+  display: flex;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.sidebar {
+  width: 155px;
+  flex-shrink: 0;
+  padding: 2.5rem 1rem 2.5rem 1.5rem;
+  position: sticky;
+  top: 57px;
+  height: fit-content;
+  align-self: flex-start;
+  border-right: 1px solid var(--border);
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  max-width: 720px;
+  padding: 2.5rem 1.5rem;
+}
+
+/* Responsive visibility */
+.desktop-search { display: flex; }
+.mobile-search-btn { display: none; }
+
+@media (max-width: 768px) {
+  .sidebar { display: none; }
+  .page-layout { display: block; }
+  .desktop-search { display: none !important; }
+  .mobile-search-btn { display: flex !important; }
+}
+
 /* Nav & card hover states */
 .nav-link { opacity: 0.6; transition: opacity 0.15s; }
 .nav-link:hover { opacity: 1; }

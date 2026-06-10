@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ConstellationBg from "@/components/ConstellationBg";
+import Sidebar from "@/components/Sidebar";
+import { getAllPosts } from "@/lib/posts";
 
 const SITE_URL = "https://helciohumberto.github.io/blog-minimal";
 
@@ -38,24 +40,19 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const posts = getAllPosts();
+
   return (
     <html lang="pt-BR">
       <body style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
         <ConstellationBg />
-        <Header />
-        <main
-          style={{
-            flex: 1,
-            position: "relative",
-            zIndex: 10,
-            maxWidth: "720px",
-            width: "100%",
-            margin: "0 auto",
-            padding: "2.5rem 1.5rem",
-          }}
-        >
-          {children}
-        </main>
+        <Header posts={posts} />
+        <div className="page-layout">
+          <Sidebar posts={posts} />
+          <main className="main-content">
+            {children}
+          </main>
+        </div>
         <Footer />
       </body>
     </html>
