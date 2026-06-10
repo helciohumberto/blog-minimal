@@ -1,11 +1,17 @@
 "use client";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Fuse from "fuse.js";
 import PostCard from "./PostCard";
 import type { PostMeta } from "@/types/post";
 
 export default function SearchBar({ posts }: { posts: PostMeta[] }) {
-  const [query, setQuery] = useState("");
+  const searchParams = useSearchParams();
+  const [query, setQuery] = useState(searchParams.get("q") ?? "");
+
+  useEffect(() => {
+    setQuery(searchParams.get("q") ?? "");
+  }, [searchParams]);
 
   const fuse = useMemo(
     () =>

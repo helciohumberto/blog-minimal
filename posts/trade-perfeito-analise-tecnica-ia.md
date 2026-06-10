@@ -6,7 +6,7 @@ category: criptomoedas
 tags: [trading, bitcoin, analise-tecnica, ia, rsi, short]
 ---
 
-Desde 2019 opero. Passei por cripto, bolsa, mercado futuro de boi gordo — qualquer coisa que tivesse gráfico e estatística por trás. Aprendi *análise técnica* na marra, com dinheiro real na mesa.
+Desde 2020 opero. Passei por cripto, bolsa, mercado futuro de boi gordo — qualquer coisa que tivesse gráfico e estatística por trás. Aprendi *análise técnica* na marra, com dinheiro real na mesa.
 
 Com o tempo, parei de adivinhar e comecei a ler o mercado de verdade. RSI, estrutura de preço, probabilidade — hoje sei quando entrar, quando sair e, mais importante, quando não fazer nada. Mas esse trade do dia 09 foi diferente. Esse ficou guardado.
 

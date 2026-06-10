@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { getAllPosts } from "@/lib/posts";
 import SearchBar from "@/components/SearchBar";
 
@@ -18,7 +19,9 @@ export default function HomePage() {
         </p>
       </div>
 
-      <SearchBar posts={posts} />
+      <Suspense>
+        <SearchBar posts={posts} />
+      </Suspense>
     </>
   );
 }
