@@ -32,6 +32,11 @@ const posts = [
     title: ['O trade perfeito:', 'análise técnica', '+ IA'],
     category: 'CRIPTOMOEDAS',
   },
+  {
+    slug: 'como-escolher-altcoins-2026',
+    title: ['Altcoins em 2026:', 'como filtrar', 'o que tem fundamento'],
+    category: 'CRIPTOMOEDAS',
+  },
 ];
 
 const url = 'helciohumberto.github.io/blog-minimal';

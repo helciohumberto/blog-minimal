@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" style="background:#0f0f0f; font-family: 'JetBrains Mono', monospace;">
+
+  <!-- Title -->
+  <text x="400" y="26" fill="#333" font-size="9" letter-spacing="2" text-anchor="middle">COMO ANALISAR TOKENOMICS</text>
+
+  <!-- ══ LEFT PANEL: Supply distribution ══ -->
+  <text x="190" y="55" fill="#555" font-size="9" letter-spacing="1" text-anchor="middle">DISTRIBUIÇÃO DO SUPPLY</text>
+
+  <!-- Label: ruim -->
+  <text x="40" y="85" fill="#7a3a3a" font-size="8" letter-spacing="1">PROJETO COM RISCO</text>
+
+  <!-- Stacked bar: ruim — team 35% + investors 20% + public 45% -->
+  <!-- team -->
+  <rect x="40" y="92" width="140" height="22" rx="2" fill="#5a2a2a"/>
+  <text x="110" y="107" fill="#cc6666" font-size="8" text-anchor="middle">TEAM 35%</text>
+  <!-- investors -->
+  <rect x="180" y="92" width="80" height="22" rx="2" fill="#4a2a1a"/>
+  <text x="220" y="107" fill="#cc8855" font-size="8" text-anchor="middle">VCs 20%</text>
+  <!-- public -->
+  <rect x="260" y="92" width="112" height="22" rx="2" fill="#1a2a1a"/>
+  <text x="316" y="107" fill="#3d8fa3" font-size="8" text-anchor="middle">PUBLIC 45%</text>
+
+  <text x="40" y="128" fill="#5a3a3a" font-size="8">⚠  55% concentrado — pressão vendedora garantida</text>
+
+  <!-- Label: bom -->
+  <text x="40" y="158" fill="#3a5a3a" font-size="8" letter-spacing="1">PROJETO COM FUNDAMENTO</text>
+
+  <!-- Stacked bar: bom — team 15% + investors 10% + public 75% -->
+  <!-- team -->
+  <rect x="40" y="165" width="60" height="22" rx="2" fill="#2a3a2a"/>
+  <text x="70" y="180" fill="#88aa88" font-size="8" text-anchor="middle">TEAM 15%</text>
+  <!-- investors -->
+  <rect x="100" y="165" width="40" height="22" rx="2" fill="#1a2a1a"/>
+  <text x="120" y="180" fill="#88aa88" font-size="8" text-anchor="middle">10%</text>
+  <!-- public -->
+  <rect x="140" y="165" width="232" height="22" rx="2" fill="#1a3a2a"/>
+  <text x="256" y="180" fill="#3d8fa3" font-size="8" text-anchor="middle">PUBLIC 75%</text>
+
+  <text x="40" y="201" fill="#3a5a3a" font-size="8">✓  25% concentrado — distribuição saudável</text>
+
+  <!-- Divider -->
+  <line x1="390" y1="40" x2="390" y2="320" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- ══ RIGHT PANEL: Market Cap vs FDV ══ -->
+  <text x="595" y="55" fill="#555" font-size="9" letter-spacing="1" text-anchor="middle">MARKET CAP vs FDV</text>
+
+  <!-- Bars base line -->
+  <line x1="430" y1="280" x2="760" y2="280" stroke="#222" stroke-width="1"/>
+
+  <!-- Market cap bar (small) -->
+  <rect x="470" y="200" width="80" height="80" rx="2" fill="#1a3a4a"/>
+  <text x="510" y="192" fill="#3d8fa3" font-size="9" text-anchor="middle">$200M</text>
+  <text x="510" y="298" fill="#555" font-size="8" text-anchor="middle">MARKET CAP</text>
+  <text x="510" y="308" fill="#555" font-size="8" text-anchor="middle">(circulante)</text>
+
+  <!-- FDV bar (tall) -->
+  <rect x="610" y="80" width="80" height="200" rx="2" fill="#3a2a1a"/>
+  <text x="650" y="72" fill="#cc8855" font-size="9" text-anchor="middle">$1.2B</text>
+  <text x="650" y="298" fill="#555" font-size="8" text-anchor="middle">FDV</text>
+  <text x="650" y="308" fill="#555" font-size="8" text-anchor="middle">(total)</text>
+
+  <!-- Brace / gap indicator -->
+  <line x1="555" y1="80" x2="608" y2="80" stroke="#5a3a1a" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="555" y1="200" x2="555" y2="80" stroke="#5a3a1a" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="555" y1="200" x2="608" y2="200" stroke="#5a3a1a" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="558" y="148" fill="#7a5a3a" font-size="8">supply</text>
+  <text x="558" y="159" fill="#7a5a3a" font-size="8">represado</text>
+  <text x="558" y="170" fill="#cc8855" font-size="8">6x maior</text>
+
+  <text x="430" y="335" fill="#5a3a3a" font-size="8">⚠  FDV muito acima do market cap = muito token pra desbloquear</text>
+
+  <!-- ══ BOTTOM: vesting timeline ══ -->
+  <line x1="40" y1="250" x2="372" y2="250" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="40" y="240" fill="#555" font-size="8" letter-spacing="1">VESTING TÍPICO</text>
+
+  <!-- timeline line -->
+  <line x1="40" y1="265" x2="372" y2="265" stroke="#222" stroke-width="1"/>
+
+  <!-- markers -->
+  <circle cx="40" cy="265" r="3" fill="#3d8fa3"/>
+  <text x="40" y="280" fill="#555" font-size="7" text-anchor="middle">lançamento</text>
+
+  <circle cx="150" cy="265" r="3" fill="#888"/>
+  <text x="150" y="280" fill="#555" font-size="7" text-anchor="middle">6 meses</text>
+
+  <circle cx="260" cy="265" r="3" fill="#cc6666"/>
+  <text x="260" y="280" fill="#cc6666" font-size="7" text-anchor="middle">vesting termina</text>
+  <text x="260" y="290" fill="#7a3a3a" font-size="7" text-anchor="middle">▼ time pode vender</text>
+
+  <circle cx="372" cy="265" r="3" fill="#555"/>
+  <text x="372" y="280" fill="#555" font-size="7" text-anchor="middle">2 anos</text>
+
+  <!-- Bottom label -->
+  <text x="400" y="352" fill="#2a2a2a" font-size="8" text-anchor="middle" letter-spacing="1">verifique on-chain · não confie no site do projeto</text>
+
+</svg>
